@@ -1,17 +1,25 @@
-var li = document.querySelectorAll(".center li")
+var li = document.querySelectorAll(".li")
 var div = document.querySelectorAll(".id")
 var idv = document.querySelectorAll(".idv")
 var iidv = document.querySelectorAll(".iidv")
+var ic = document.querySelector(".ic")
+var cart = document.querySelector(".cart")
+var lii 
 console.log(div,idv,iidv)
 
 for(let i=0;i<idv.length;i++){
+
+    if(i==5||i==7||i>=8){
+        continue
+    }
+
     idv[i].addEventListener("mouseover",function(){
 
         for(let j=0;j<idv.length;j++){
             iidv[j].classList.remove("active")
         }
-        div[0].classList.add("wide")
         iidv[i].classList.add("active")
+        div[lii].classList.add("wide")
     })
 }
 
@@ -24,6 +32,7 @@ for(let i=0;i<idv.length;i++){
 for(let i=0;i<li.length;i++){
     li[i].addEventListener("mouseover",function(){
         div[i].classList.add("active")
+        lii = i
     })
 }
 
@@ -31,8 +40,16 @@ for(let i=0;i<li.length;i++){
     li[i].addEventListener("mouseout",function(){
         div[i].classList.remove("active")
         div[i].classList.remove("wide")
-        for(let j=0;j<idv.length;j++){
+        /*for(let j=0;j<idv.length;j++){
             iidv[j].classList.remove("active")
-        }
+        }*/
     })
 }
+
+ic.addEventListener("mouseover",function(){
+    cart.classList.add("active")
+})
+
+ic.addEventListener("mouseout",function(){
+    cart.classList.remove("active")
+})

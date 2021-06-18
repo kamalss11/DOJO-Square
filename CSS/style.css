@@ -13,6 +13,7 @@
 
 body{
     background-color: black;
+    overflow: hidden;
 }
 
 nav{
@@ -70,7 +71,7 @@ nav .center li .id .idv{
 }
 
 nav .center li .id .idv:hover{
-    background: #dadada;
+    background: #e8e5e5;
 }
 
 nav .center li .id .idv p{
@@ -79,6 +80,22 @@ nav .center li .id .idv p{
 
 nav .center li .id .idv p i{
     font-size: 10px;
+}
+
+nav .center li .id .idv:nth-last-child(1){
+    padding: 15px 0;
+}
+
+nav .center li .id .idv:nth-last-child(1):hover{
+    background: white;
+}
+
+nav .center li .id .idv:nth-last-child(1) p{
+    padding: 15px;
+}
+
+nav .center li .id .idv:nth-last-child(1) p:hover{
+    background-color: #e8e5e5;
 }
 
 nav .center li .id.active{
@@ -97,20 +114,80 @@ nav .center li .id.wide .idv{
 
 nav .center li .id .iidv{
     position: absolute;
-    left: 250px;
+    left: 248px;
     top:  0;
-    padding: 15px 25px;
-    opacity: 0;
+    padding: 15px 0;
+    display: none;
     width: 250px;
     height: 100%;
     z-index: 10;
 }
 
 nav .center li .id .iidv.active{
-    opacity: 1;
-    background: indianred;
+    display: block;
 }
 
 nav .center li .id .iidv p{
-    line-height: 30px;
+    padding: 15px;
+}
+
+nav .center li .id .iidv p:hover{
+    background-color: #e8e5e5;
+}
+
+nav .right .ic{
+    position: relative;
+}
+
+nav .right .ic .cart{
+    position: absolute;
+    top: 36px;
+    left: -270px;
+    width: 300px;
+    background-color: white;
+    padding: 25px 0;
+    border-radius: 5px;
+    border: 1px solid #e8e5e5;
+    cursor: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: .4s;
+}
+
+nav .right .ic .cart.active{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+nav .right .ic .cart div:nth-child(1){
+    padding: 0 25px;
+    border-bottom: 1px solid #e8e5e5;
+}
+
+nav .right .ic .cart div .ind{
+    padding: 10px 15px;
+    color: #c3c0c0;
+}
+
+nav .right .ic .cart div button{
+    width: 100%;
+    padding: 10px;
+    background-color: #006aff;
+    color: white;
+    border: none;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+nav .right .ic .cart div:nth-child(2){
+    padding: 10px 0 0;
+}
+
+nav .right .ic .cart div:nth-child(2) p{
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+nav .right .ic .cart div:nth-child(2) p:hover{
+    background-color: #e8e5e5;
 }
