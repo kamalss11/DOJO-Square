@@ -62,13 +62,11 @@ nav .center li .id{
     font-weight: normal;
     transform: translateY(20px);
     transition: .4s;
-    display: flex;
 }
 
 nav .center li .id .idv{
     padding: 15px 15px;
     width: 250px;
-    position: relative;
 }
 
 nav .center li .id .idv:hover{
@@ -97,14 +95,22 @@ nav .center li .id.wide .idv{
     width: 250px;
 }
 
-nav .center li .id div:nth-child(2) .iidv{
-    display: none;
+nav .center li .id .iidv{
+    position: absolute;
+    left: 250px;
+    top:  0;
+    padding: 15px 25px;
+    opacity: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 10;
 }
 
-nav .center li .id div:nth-child(2) .iidv.active{
-    display: block;
+nav .center li .id .iidv.active{
+    opacity: 1;
+    background: indianred;
 }
 
-nav .center li .id div:nth-child(2) .iidv p{
+nav .center li .id .iidv p{
     line-height: 30px;
 }
