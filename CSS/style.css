@@ -22,6 +22,10 @@ nav{
     align-items: center;
 }
 
+nav .logo img{
+    width: 100px;
+}
+
 nav .center,nav .right{
     display: flex;
 }
@@ -36,4 +40,58 @@ nav .center li,nav .right li{
 nav .center li:hover,nav .right li:hover{
     background-color: rgb(230, 230, 230);
     cursor: pointer;
+}
+
+nav .center li{
+    position: relative;
+}
+
+nav .center li .id{
+    position: absolute;
+    left: -20px;
+    top: 35px;
+    width: 250px;
+    background: white;
+    border: 1px solid rgb(207, 206, 206);
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 13px;
+    opacity: 0;
+    pointer-events: none;
+    font-weight: normal;
+    transform: translateY(20px);
+    transition: .4s;
+}
+
+nav .center li .id div{
+    margin: 15px 0;
+    padding: 10px 15px;
+}
+
+nav .center li .id div:hover{
+    background: #dadada;
+}
+
+nav .center li .id div p{
+    margin: 5px 0;
+}
+
+nav .center li .id div p i{
+    font-size: 10px;
+}
+
+nav .center li .id.active{
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav .center li .id.wide{
+    width: 500px;
+}
+
+nav .center li .id div div{
+    position: absolute;
+    right: -50px;
+    top: 0;
 }
