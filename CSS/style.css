@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     outline: none;
     list-style-type: none;
     text-decoration: none;
@@ -61,22 +62,24 @@ nav .center li .id{
     font-weight: normal;
     transform: translateY(20px);
     transition: .4s;
+    display: flex;
 }
 
-nav .center li .id div{
-    margin: 15px 0;
-    padding: 10px 15px;
+nav .center li .id .idv{
+    padding: 15px 15px;
+    width: 250px;
+    position: relative;
 }
 
-nav .center li .id div:hover{
+nav .center li .id .idv:hover{
     background: #dadada;
 }
 
-nav .center li .id div p{
+nav .center li .id .idv p{
     margin: 5px 0;
 }
 
-nav .center li .id div p i{
+nav .center li .id .idv p i{
     font-size: 10px;
 }
 
@@ -90,8 +93,18 @@ nav .center li .id.wide{
     width: 500px;
 }
 
-nav .center li .id div div{
-    position: absolute;
-    right: -50px;
-    top: 0;
+nav .center li .id.wide .idv{
+    width: 250px;
+}
+
+nav .center li .id div:nth-child(2) .iidv{
+    display: none;
+}
+
+nav .center li .id div:nth-child(2) .iidv.active{
+    display: block;
+}
+
+nav .center li .id div:nth-child(2) .iidv p{
+    line-height: 30px;
 }
