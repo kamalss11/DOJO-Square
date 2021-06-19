@@ -66,7 +66,7 @@ nav .center li .id{
 }
 
 nav .center li .id .idv{
-    padding: 15px 15px;
+    padding: 15px;
     width: 250px;
 }
 
@@ -80,22 +80,6 @@ nav .center li .id .idv p{
 
 nav .center li .id .idv p i{
     font-size: 10px;
-}
-
-nav .center li .id .idv:nth-last-child(1){
-    padding: 15px 0;
-}
-
-nav .center li .id .idv:nth-last-child(1):hover{
-    background: white;
-}
-
-nav .center li .id .idv:nth-last-child(1) p{
-    padding: 15px;
-}
-
-nav .center li .id .idv:nth-last-child(1) p:hover{
-    background-color: #e8e5e5;
 }
 
 nav .center li .id.active{
@@ -135,13 +119,29 @@ nav .center li .id .iidv p:hover{
     background-color: #e8e5e5;
 }
 
+nav .center li .id .idvl{
+    padding: 15px 0;
+}
+
+nav .center li .id .idvl p{
+    padding: 15px;
+}
+
+nav .center li .id .idvl:hover{
+    background: none;
+}
+
+nav .center li .id .idvl p:hover{
+    background-color: #e8e5e5;
+}
+
 nav .right .ic{
     position: relative;
 }
 
 nav .right .ic .cart{
     position: absolute;
-    top: 36px;
+    top: 38px;
     left: -270px;
     width: 300px;
     background-color: white;

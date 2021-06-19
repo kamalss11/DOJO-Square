@@ -9,7 +9,7 @@ console.log(div,idv,iidv)
 
 for(let i=0;i<idv.length;i++){
 
-    if(i==5||i==7||i>=8){
+    if(i==5||i>=8){
         continue
     }
 
