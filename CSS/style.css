@@ -13,7 +13,6 @@
 
 body{
     background-color: black;
-    overflow: hidden;
 }
 
 nav{
@@ -190,4 +189,62 @@ nav .right .ic .cart div:nth-child(2) p{
 
 nav .right .ic .cart div:nth-child(2) p:hover{
     background-color: #e8e5e5;
+}
+
+.story{
+    color: white;
+    width: 50%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.story h1{
+    font-size: 2.5em;
+}
+
+.story h3{
+    margin: 15px 0;
+    line-height: 28px;
+}
+
+.images{
+    display: flex;
+    margin: 100px auto 50px;
+    justify-content: center;
+}
+
+.images div{
+    height: 300px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.images div:nth-child(1){
+    width: 30%;
+}
+
+.images div:nth-child(1) img,.images div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.images div:nth-child(2){
+    width: 60%;
+}
+
+.run{
+    color: white;
+    width: 868px;
+    margin: 150px auto 100px;
+}
+
+.run h1{
+    font-size: 2.5em;
+}
+
+.run h3{
+    margin: 15px 0;
+    line-height: 28px;
 }
