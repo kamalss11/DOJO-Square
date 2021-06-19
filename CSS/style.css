@@ -251,7 +251,7 @@ nav .right .ic .cart div:nth-child(2) p:hover{
 }
 
 .hotspot{
-    width: 90%;
+    width: 94%;
     height: 650px;
     margin: 100px auto 50px;
     position: relative;
@@ -264,15 +264,61 @@ nav .right .ic .cart div:nth-child(2) p:hover{
     border-radius: 15px;
 }
 
-.hotspot div{
+.hotspot .p1{
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translate(-9%,-50%);
+}
+
+.hotspot .p2{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+}
+
+.hotspot .p3{
+    position: absolute;
+    top: 70%;
+    right: 25%;
+    transform: translate(-25%,-70%);
+}
+
+.hotspot .p4{
+    position: absolute;
+    top: 90%;
+    right: 15%;
+    transform: translate(-15%,-90%);
+}
+
+.hotspot .p5{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    transform: translate(-5%,-15%);
+}
+
+.hotspot div i{
     color: white;
     font-size: 18px;
     background-color: #006aff;
+    padding: 13px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.hotspot div::nth-child(1){
+.hotspot div div{
     position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-10%,-50%);
+    top: 20px;
+    left: 20px;
+    width: 350px;
+    padding: 25px 35px;
+    background-color: white;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.hotspot div div:nth-child(3){
+    
 }

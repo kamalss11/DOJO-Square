@@ -40,9 +40,6 @@ for(let i=0;i<li.length;i++){
     li[i].addEventListener("mouseout",function(){
         div[i].classList.remove("active")
         div[i].classList.remove("wide")
-        /*for(let j=0;j<idv.length;j++){
-            iidv[j].classList.remove("active")
-        }*/
     })
 }
 
@@ -53,3 +50,8 @@ ic.addEventListener("mouseover",function(){
 ic.addEventListener("mouseout",function(){
     cart.classList.remove("active")
 })
+
+var ps = document.querySelectorAll(".p")
+var pinfo = document.querySelectorAll(".pinfo")
+
+console.log(ps,pinfo)
