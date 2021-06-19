@@ -172,6 +172,7 @@ nav .right .ic .cart div button{
     width: 100%;
     padding: 10px;
     background-color: #006aff;
+    border-radius: 5px;
     color: white;
     border: none;
     margin: 15px 0;
@@ -237,7 +238,7 @@ nav .right .ic .cart div:nth-child(2) p:hover{
 .run{
     color: white;
     width: 868px;
-    margin: 150px auto 100px;
+    margin: 150px auto;
 }
 
 .run h1{
@@ -247,4 +248,31 @@ nav .right .ic .cart div:nth-child(2) p:hover{
 .run h3{
     margin: 15px 0;
     line-height: 28px;
+}
+
+.hotspot{
+    width: 90%;
+    height: 650px;
+    margin: 100px auto 50px;
+    position: relative;
+}
+
+.hotspot img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.hotspot div{
+    color: white;
+    font-size: 18px;
+    background-color: #006aff;
+}
+
+.hotspot div::nth-child(1){
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%,-50%);
 }
