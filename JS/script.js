@@ -59,15 +59,17 @@ console.log(ps,pinfo)
 for(let i=0;i<ps.length;i++){
     ps[i].addEventListener("click",function(){
         if(pinfo[i].classList.contains("active")){
+            pinfo[i].classList.remove("active")
+        }
+
+        else{
+            for(let j=0;j<ps.length;j++){
+                pinfo[j].classList.remove("active")
+            }
+            
             pinfo[i].classList.add("active")
         }
 
-        
-        for(let j=0;j<ps.length;j++){
-            pinfo[j].classList.remove("active")
-        }
-        
-        pinfo[i].classList.add("active")
     })
 }
 
