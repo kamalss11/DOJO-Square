@@ -55,3 +55,28 @@ var ps = document.querySelectorAll(".p")
 var pinfo = document.querySelectorAll(".pinfo")
 
 console.log(ps,pinfo)
+
+for(let i=0;i<ps.length;i++){
+    ps[i].addEventListener("click",function(){
+        if(pinfo[i].classList.contains("active")){
+            pinfo[i].classList.add("active")
+        }
+
+        
+        for(let j=0;j<ps.length;j++){
+            pinfo[j].classList.remove("active")
+        }
+        
+        pinfo[i].classList.add("active")
+    })
+}
+
+/*document.addEventListener("click",function(e){
+    console.log(e)
+    for(let j=0;j<ps.length;j++){
+        if(pinfo[j].classList.contains == "active"){
+            alert("hi")
+        }
+        pinfo[j].classList.remove("active")
+    }
+})*/

@@ -235,19 +235,23 @@ nav .right .ic .cart div:nth-child(2) p:hover{
     width: 60%;
 }
 
-.run{
+.run,.fre,.mng{
     color: white;
     width: 868px;
     margin: 150px auto;
 }
 
-.run h1{
+.run h1,.fre h1,.mng h1{
     font-size: 2.5em;
 }
 
-.run h3{
+.run h3,.fre h3,.mng h3{
     margin: 15px 0;
     line-height: 28px;
+}
+
+.fre img{
+    margin: 40px 0 0;
 }
 
 .hotspot{
@@ -271,18 +275,39 @@ nav .right .ic .cart div:nth-child(2) p:hover{
     transform: translate(-9%,-50%);
 }
 
+.hotspot .pi1{
+    position: absolute;
+    top: 63%;
+    left: 14%;
+    transform: translate(-14%,-63%);
+}
+
 .hotspot .p2{
     position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%,-80%);
+    top: 70%;
+    left: 53%;
+    transform: translate(-53%,-70%);
+}
+
+.hotspot .pi2{
+    position: absolute;
+    top: 58%;
+    left: 36%;
+    transform: translate(-36%,-58%);
 }
 
 .hotspot .p3{
     position: absolute;
     top: 70%;
-    right: 25%;
-    transform: translate(-25%,-70%);
+    right: 20%;
+    transform: translate(-20%,-70%);
+}
+
+.hotspot .pi3{
+    position: absolute;
+    top: 60%;
+    right: 18%;
+    transform: translate(-18%,-60%);
 }
 
 .hotspot .p4{
@@ -292,11 +317,25 @@ nav .right .ic .cart div:nth-child(2) p:hover{
     transform: translate(-15%,-90%);
 }
 
+.hotspot .pi4{
+    position: absolute;
+    top: 85%;
+    right: 13%;
+    transform: translate(-13%,-85%);
+}
+
 .hotspot .p5{
     position: absolute;
     top: 15%;
     right: 5%;
     transform: translate(-5%,-15%);
+}
+
+.hotspot .pi5{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(-5%,-20%);
 }
 
 .hotspot div i{
@@ -308,17 +347,27 @@ nav .right .ic .cart div:nth-child(2) p:hover{
     cursor: pointer;
 }
 
-.hotspot div div{
-    position: absolute;
-    top: 20px;
-    left: 20px;
+.hotspot .pinfo{
     width: 350px;
     padding: 25px 35px;
     background-color: white;
     font-size: 14px;
     line-height: 28px;
+    transition: .7s;
+    opacity: 0;
+    pointer-events: none;
 }
 
-.hotspot div div:nth-child(3){
-    
+.hotspot .pinfo.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hotspot .pinfo p{
+    transform: translateY(10px);
+    transition: .7;
+}
+
+.hotspot .pinfo.active p{
+    transform: translateY(0);
 }
