@@ -69,16 +69,11 @@ for(let i=0;i<ps.length;i++){
             
             pinfo[i].classList.add("active")
         }
-
     })
 }
 
-/*document.addEventListener("click",function(e){
-    console.log(e)
-    for(let j=0;j<ps.length;j++){
-        if(pinfo[j].classList.contains == "active"){
-            alert("hi")
-        }
-        pinfo[j].classList.remove("active")
-    }
-})*/
+var bars = document.querySelector(".bars")
+
+bars.addEventListener("click",function(){
+    bars.classList.toggle("active")
+})
