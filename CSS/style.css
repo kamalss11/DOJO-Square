@@ -193,7 +193,7 @@ nav .right .ic .cart div:nth-child(2) p:hover{
     background-color: #e8e5e5;
 }
 
-nav .bars{
+nav .right .bars{
     cursor: pointer;
     margin: 0 10px;
     display: none;
@@ -446,24 +446,47 @@ nav .right .bars span::after{
 }
 
 @media(max-width: 770px){
-    nav .bars{
+    nav .right .bars{
         display: block;
     }
 
-    nav .bars.active span{
+    nav .right .bars.active span{
         background: transparent;
     }
 
-    nav .bars.active span::before{
-        background: transparent;
+    nav .right .bars.active span::before,nav .bars.active span::after{
+        top: 0;
+    }
+
+    nav .right .bars.active span::before{
+        transform: rotate(45deg);
+    }
+
+    nav .right .bars.active span::after{
+        transform: rotate(-45deg);
+    }
+
+    nav .right li:nth-child(1),nav .right li:nth-child(2){
+        display: none;
     }
 
     nav .center{
         display: none;
     }
 
-    nav .right li:nth-child(1),nav .right li:nth-child(2){
-        display: none;
+    nav .center.active{
+        display: block;
+        position: fixed;
+        top: 68px;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        color: black;
+    }
+
+    nav .center.active li{
+        padding: 25px;
     }
 
     .run,.fre,.mng{

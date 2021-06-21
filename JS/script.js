@@ -73,7 +73,9 @@ for(let i=0;i<ps.length;i++){
 }
 
 var bars = document.querySelector(".bars")
+var center = document.querySelector(".center")
 
 bars.addEventListener("click",function(){
     bars.classList.toggle("active")
+    center.classList.toggle("active")
 })
