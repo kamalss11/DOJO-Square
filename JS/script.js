@@ -5,6 +5,8 @@ var iidv = document.querySelectorAll(".iidv")
 var ic = document.querySelector(".ic")
 var cart = document.querySelector(".cart")
 var lii 
+var ad = document.querySelectorAll(".f")
+var ia = document.querySelectorAll(".in")
 console.log(div,idv,iidv)
 
 for(let i=0;i<idv.length;i++){
@@ -14,7 +16,7 @@ for(let i=0;i<idv.length;i++){
     }
 
     idv[i].addEventListener("mouseover",function(){
-
+        ia[i].classList.add("active")
         for(let j=0;j<idv.length;j++){
             iidv[j].classList.remove("active")
         }
@@ -26,12 +28,14 @@ for(let i=0;i<idv.length;i++){
 for(let i=0;i<idv.length;i++){
     idv[i].addEventListener("mouseout",function(){
         iidv[i].classList.remove("active")
+        ia[i].classList.remove("active")
     })
 }
 
 for(let i=0;i<li.length;i++){
     li[i].addEventListener("mouseover",function(){
         div[i].classList.add("active")
+        ad[i].classList.add("active")
         lii = i
     })
 }
@@ -40,6 +44,7 @@ for(let i=0;i<li.length;i++){
     li[i].addEventListener("mouseout",function(){
         div[i].classList.remove("active")
         div[i].classList.remove("wide")
+        ad[i].classList.remove("active")
     })
 }
 

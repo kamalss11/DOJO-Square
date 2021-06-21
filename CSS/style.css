@@ -48,6 +48,10 @@ nav .center li{
     position: relative;
 }
 
+nav .center li i{
+    display: none;
+}
+
 nav .center li .id{
     position: absolute;
     left: -20px;
@@ -65,6 +69,16 @@ nav .center li .id{
     transition: .4s;
 }
 
+.f.active,.in.active{
+    transform: rotate(180deg);
+}
+
+nav .center li .id.active{
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 nav .center li .id .idv{
     padding: 15px;
     width: 250px;
@@ -80,12 +94,6 @@ nav .center li .id .idv p{
 
 nav .center li .id .idv p i{
     font-size: 10px;
-}
-
-nav .center li .id.active{
-    pointer-events: auto;
-    opacity: 1;
-    transform: translateY(0);
 }
 
 nav .center li .id.wide{
@@ -477,16 +485,63 @@ nav .right .bars span::after{
     nav .center.active{
         display: block;
         position: fixed;
-        top: 68px;
+        top: 75px;
         right: 0;
         width: 50%;
         height: 100%;
         background-color: white;
         color: black;
+        z-index: 10;
+        overflow: auto;
     }
 
     nav .center.active li{
         padding: 25px;
+        border-bottom: 1px solid #80808038;
+    }
+
+    nav .center.active li p{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .center.active li p i{
+        display: block;
+    }
+
+    nav .center.active li .id{
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #e6e6e6;
+        height: 0;
+        border: none;
+        width: 100%;
+        transition: .4s;
+    }
+
+    nav .center.active li .id.active{
+        height: auto;
+        opacity: 1;
+    }
+
+    nav .center.active li .id .idv{
+        width: 100%;
+    }
+
+    nav .center li .id .idv p b{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .center li .id .idv .iidv{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
     }
 
     .run,.fre,.mng{
