@@ -7,7 +7,7 @@ var cart = document.querySelector(".cart")
 var lii 
 var ad = document.querySelectorAll(".f")
 var ia = document.querySelectorAll(".in")
-console.log(div,idv,iidv)
+console.log(div,idv,iidv,ia)
 
 for(let i=0;i<idv.length;i++){
 
@@ -16,12 +16,12 @@ for(let i=0;i<idv.length;i++){
     }
 
     idv[i].addEventListener("mouseover",function(){
-        ia[i].classList.add("active")
         for(let j=0;j<idv.length;j++){
             iidv[j].classList.remove("active")
         }
         iidv[i].classList.add("active")
         div[lii].classList.add("wide")
+        ia[i].classList.add("active")
     })
 }
 
